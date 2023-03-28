@@ -31,8 +31,8 @@ revElement(myNums);
 
 //#5
 function s3Element(arr){
-    for(let rev=arr.length-1; rev>=0; rev-=3){
-        console.log(arr[rev]);
+    for(let third = 2; third < arr.length; third=third+3){
+        console.log(arr[third]);
     }
 }
 let Skip = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -40,8 +40,18 @@ s3Element(Skip);
 
 //#6
 function s2Element(arr){
-    for(let rev=arr.length-2; rev>=0; rev-=2){
-        console.log(arr[rev]);
+    for(let sec = 2; sec < arr.length; sec=sec+2){
+        console.log(arr[sec]);
     }
 }
 s2Element(Skip);
+
+//#7
+function moreThanFour(arr){
+    for(let num=0; num < arr.length; num++){
+        let item = arr[num];
+        if (item>4){
+            console.log();
+        }
+    }
+}
